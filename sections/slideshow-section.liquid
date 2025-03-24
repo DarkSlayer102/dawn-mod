@@ -1,0 +1,539 @@
+{% schema %}
+{
+  "name": "Slideshow Section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "slide_count",
+      "label": "Number of Slides",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_image_1",
+      "label": "Slide 1 Image"
+    },
+    {
+      "type": "select",
+      "id": "content_position_1",
+      "label": "Slide 1 Content Position",
+      "options": [
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-center", "label": "Top Center" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "center-left", "label": "Center Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "center-right", "label": "Center Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-center", "label": "Bottom Center" },
+        { "value": "bottom-right", "label": "Bottom Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_title_1",
+      "label": "Slide 1 Title"
+    },
+    {
+      "type": "text",
+      "id": "slide_description_1",
+      "label": "Slide 1 Description"
+    },
+    {
+      "type": "url",
+      "id": "slide_link_1",
+      "label": "Slide 1 Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_image_2",
+      "label": "Slide 2 Image"
+    },
+    {
+      "type": "select",
+      "id": "content_position_2",
+      "label": "Slide 2 Content Position",
+      "options": [
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-center", "label": "Top Center" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "center-left", "label": "Center Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "center-right", "label": "Center Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-center", "label": "Bottom Center" },
+        { "value": "bottom-right", "label": "Bottom Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_title_2",
+      "label": "Slide 2 Title"
+    },
+    {
+      "type": "text",
+      "id": "slide_description_2",
+      "label": "Slide 2 Description"
+    },
+    {
+      "type": "url",
+      "id": "slide_link_2",
+      "label": "Slide 2 Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_image_3",
+      "label": "Slide 3 Image"
+    },
+    {
+      "type": "select",
+      "id": "content_position_3",
+      "label": "Slide 3 Content Position",
+      "options": [
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-center", "label": "Top Center" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "center-left", "label": "Center Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "center-right", "label": "Center Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-center", "label": "Bottom Center" },
+        { "value": "bottom-right", "label": "Bottom Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_title_3",
+      "label": "Slide 3 Title"
+    },
+    {
+      "type": "text",
+      "id": "slide_description_3",
+      "label": "Slide 3 Description"
+    },
+    {
+      "type": "url",
+      "id": "slide_link_3",
+      "label": "Slide 3 Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_image_4",
+      "label": "Slide 4 Image"
+    },
+    {
+      "type": "select",
+      "id": "content_position_4",
+      "label": "Slide 4 Content Position",
+      "options": [
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-center", "label": "Top Center" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "center-left", "label": "Center Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "center-right", "label": "Center Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-center", "label": "Bottom Center" },
+        { "value": "bottom-right", "label": "Bottom Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_title_4",
+      "label": "Slide 4 Title"
+    },
+    {
+      "type": "text",
+      "id": "slide_description_4",
+      "label": "Slide 4 Description"
+    },
+    {
+      "type": "url",
+      "id": "slide_link_4",
+      "label": "Slide 4 Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_image_5",
+      "label": "Slide 5 Image"
+    },
+    {
+      "type": "select",
+      "id": "content_position_5",
+      "label": "Slide 5 Content Position",
+      "options": [
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-center", "label": "Top Center" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "center-left", "label": "Center Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "center-right", "label": "Center Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-center", "label": "Bottom Center" },
+        { "value": "bottom-right", "label": "Bottom Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_title_5",
+      "label": "Slide 5 Title"
+    },
+    {
+      "type": "text",
+      "id": "slide_description_5",
+      "label": "Slide 5 Description"
+    },
+    {
+      "type": "url",
+      "id": "slide_link_5",
+      "label": "Slide 5 Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow Section",
+      "category": "Image"
+    }
+  ]
+  }
+{% endschema %}
+
+<section class="slideshow-section">
+  <div class="slideshow-container">
+    <div class="slides">
+      {% for i in (1..section.settings.slide_count) %}
+        {% assign img_var = 'slide_image_' | append: i %}
+        {% assign title_var = 'slide_title_' | append: i %}
+        {% assign desc_var = 'slide_description_' | append: i %}
+        {% assign link_var = 'slide_link_' | append: i %}
+        {% assign position_var = 'content_position_' | append: i %}
+        {% if section.settings[img_var] != blank %}
+          <div class="slide {% if forloop.first %}active{% endif %}">
+            <img
+              src="{{ section.settings[img_var] | img_url: 'master' }}"
+              srcset="
+                {{ section.settings[img_var] | img_url: '600x' }} 600w,
+                {{ section.settings[img_var] | img_url: '1000x' }} 1000w,
+                {{ section.settings[img_var] | img_url: '1500x' }} 1500w,
+                {{ section.settings[img_var] | img_url: 'master' }} {{ section.settings[img_var].width }}w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1000px) 100vw, (max-width: 1500px) 100vw, {{ section.settings[img_var].width }}px"
+              alt="Slide {{ i }}"
+            >
+            <div class="slide-content {{ section.settings[position_var] }}">
+              <h2 class="slide-title">{{ section.settings[title_var] }}</h2>
+              <p class="slide-description">{{ section.settings[desc_var] }}</p>
+              <a href="{{ section.settings[link_var] }}" class="btn">Shop Now</a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="dots-container">
+      {% for i in (1..section.settings.slide_count) %}
+        {% assign dot_index = i | minus: 1 %}
+        <span class="dot {% if forloop.first %}active{% endif %}" onclick="currentSlide({{ dot_index }})"></span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<style>
+  .slideshow-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    overflow: hidden;
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+  }
+
+  /* Updated slides container for fade effect */
+  .slides {
+    position: relative;
+    height: 100%;
+    /* Remove the flex and transition properties used for sliding */
+  }
+
+  /* Updated slide styling for fade effect */
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    overflow: hidden;
+  }
+
+  /* Active slide is visible */
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .slide-content {
+    position: absolute;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+  }
+
+  .slide-title {
+    color: white;
+    font-weight: bold;
+  }
+
+  .slide-description {
+    color: white;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 123, 255, 0.5);
+  }
+
+  .btn:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .dots-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: width 0.3s;
+  }
+
+  .dot.active {
+    width: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  /* Positioning rules */
+  .slide-content.top-left { top: 20px; left: 20px; transform: none; text-align: left; }
+  .slide-content.top-center { top: 20px; left: 50%; transform: translateX(-50%); text-align: center; }
+  .slide-content.top-right { top: 20px; right: 20px; transform: none; text-align: right; }
+  .slide-content.center-left { top: 50%; left: 20px; transform: translateY(-50%); text-align: left; }
+  .slide-content.center { top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+  .slide-content.center-right { top: 50%; right: 20px; transform: translateY(-50%); text-align: right; }
+  .slide-content.bottom-left { bottom: 20px; left: 20px; transform: none; text-align: left; }
+  .slide-content.bottom-center { bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center; }
+  .slide-content.bottom-right { bottom: 20px; right: 20px; transform: none; text-align: right; }
+
+  /* Mobile-specific styles (applied when screen width is 768px or less) */
+  @media (max-width: 768px) {
+    .slideshow-section {
+      padding: 10px;
+    }
+
+    .slideshow-container {
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      height: auto;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+    }
+
+    .slide {
+      height: 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .slide-content {
+      padding: 15px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .dots-container {
+      bottom: 15px;
+      right: 50%;
+      transform: translateX(50%);
+      border-radius: 15px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .dot.active {
+      width: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .slide-content.top-left,
+    .slide-content.top-center,
+    .slide-content.top-right {
+      top: 10px;
+    }
+
+    .slide-content.center-left,
+    .slide-content.center,
+    .slide-content.center-right {
+      top: 50%;
+    }
+
+    .slide-content.bottom-left,
+    .slide-content.bottom-center,
+    .slide-content.bottom-right {
+      bottom: 10px;
+    }
+
+    .slide-content.top-left,
+    .slide-content.center-left,
+    .slide-content.bottom-left {
+      left: 10px;
+    }
+
+    .slide-content.top-right,
+    .slide-content.center-right,
+    .slide-content.bottom-right {
+      right: 10px;
+    }
+  }
+</style>
+
+<script>
+  let index = 0;
+  let slideInterval;
+
+  function moveSlide(step) {
+    const slides = document.querySelectorAll(".slide");
+    const totalSlides = slides.length;
+
+    // Remove active class from current slide
+    slides[index].classList.remove("active");
+
+    // Calculate new index
+    index = (index + step + totalSlides) % totalSlides;
+
+    // Add active class to new slide
+    slides[index].classList.add("active");
+
+    updateDots();
+    resetAutoSlide();
+  }
+
+  function currentSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+
+    // Remove active class from current slide
+    slides[index].classList.remove("active");
+
+    // Set new index
+    index = n;
+
+    // Add active class to new slide
+    slides[index].classList.add("active");
+
+    updateDots();
+    resetAutoSlide();
+  }
+
+  function updateDots() {
+    const dots = document.querySelectorAll(".dot");
+
+    // Remove active class from all dots
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    // Add active class to current dot
+    dots[index].classList.add("active");
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(() => {
+      moveSlide(1);
+    }, 5000); // Changes slide every 5 seconds
+  }
+
+  function resetAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+  }
+
+  function disableRightClick() {
+    const slideImages = document.querySelectorAll('.slide img');
+    slideImages.forEach(img => {
+      img.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    startAutoSlide();
+    disableRightClick();
+  });
+</script>
